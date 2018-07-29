@@ -1,33 +1,178 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
-        <script src="./jquery-3.2.1.js"></script>        
-        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    </head>
-    <body>
-        <!--write your code here-->
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        You're ready to go!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统一建模语言</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .page-header {
+            border-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="container theme-showcase">
+    <div class="text-center">
+        <h1>统一建模语言理论测试</h1>
     </div>
-  </div>
+    <div class="">
+        <table class="table">
+            <tr>
+                <th>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon">科目：</span>
+                        <input class="form-control" type="text" aria-describedby="sizing-addon2" placeholder="统一建模语言"
+                               readonly>
+                    </div>
+                </th>
+                <th>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon0">时间：</span>
+                        <input class="form-control" type="text" aria-describedby="sizing-addon2" placeholder="100分钟"
+                               readonly>
+                    </div>
+                </th>
+                <th>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon1">得分：</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon2" id="grade"  >
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon2">班级：</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon2" id="classNumber">
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon3">学号：</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon2" id="schoolNumber">
+                    </div>
+                </td>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon4">姓名：</span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon2" id="name">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <h3>一、填空题(每空10分，共40分)</h3>
+            <p>1.UML的中文全称是：<input id="file_1_1" type="text" value=""></p>
+            <p>2.对象最突出的特征是：<input id="file_1_2_1" type="text" value="">、
+                <input id="file_1_2_2" type="text" value="">、
+                <input id="file_1_2_3" type="text" value=""></p>
+            <h3>二、选择题(每题5分，共10分)</h3>
+            <div>
+                <p>1.UML 与软件工程的关系是:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_1" value="A"/>(A)UML 就是软件工程
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_1" value="B"/>(B)UML 参与到软件工程中软件开发过程的几个阶段
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_1" value="C"/>(C)UML 与软件工程无关
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_1" value="D"/>(D)UML 是软件工程的一部分
+
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>2.Java 语言支持:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_2" value="A"/>(A)单继承<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_2" value="B"/>(B)多继承<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_2" value="C"/>(C)单继承和多继承都支持<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="radio_2" value="D"/>(D)单继承和多继承都不支持
+                    </li>
+                </ul>
+            </div>
+            <h3>三、多选题(每题15分，共30分)</h3>
+            <div>
+                <p>1. 用例的粒度分为以下哪三种。</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_1" value="A">(A)概述级<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_1" value="B">(B)需求级<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_1" value="C">(C)用户目标级<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_1" value="D">(D)子功能级
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>2. 类图由以下哪三部分组成。</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_2" value="A">(A)名称(Name)<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_2" value="B">(B)属性(Attribute)<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_2" value="C">(C)操作(Operation)<br>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="checkbox" name="interest_2" value="DS">(D)方法(Function)
+                    </li>
+                </ul>
+            </div>
+            <h3>四、判断题(每题5分，共10分)</h3>
+            <div>
+                <p>1. 用例图只是用于和客户交流和沟通的,用于确定需求。</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="radio" name="gender_1" value="对">对
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="gender_1" value="错">错
+
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>2. 在状态图中,终止状态在一个状态图中允许有任意多个。</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input type="radio" name="gender_2" value="对">对
+                    </li>
+                    <li class="list-group-item">
+                        <input type="radio" name="gender_2" value="错">错
+
+                    </li>
+                </ul>
+            </div>
+            <h3>五、简答题(共10分)</h3>
+            <div>
+                <p>简述什么是模型以及模型的表现形式?</p>
+                <input name="text" class="form-control" id="file_5" type="text" value="">
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn btn-info" id="button">提交</button>
+    </div>
 </div>
-    </body>
+</body>
+<script type="text/javascript" src="examination.js"></script>
 </html>
